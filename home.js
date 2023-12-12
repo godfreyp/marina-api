@@ -70,7 +70,7 @@ router.get('/profile', requiresAuth(), function(req, res) {
     "<p>Be sure to log in on another account and use both this JWT and the other account's for testing.</p>" +
     '<a href="/logout' + '">Logout</a>' +
     '<h2>JWT</h2>' +
-    '<p>' + JSON.stringify(req.oidc.idToken) + '</p>';
+    '<p>' + req.oidc.idToken + '</p>';
     res.setHeader('Content-Type', 'text/html');
     res.status(200).send(profilePage);
 });
