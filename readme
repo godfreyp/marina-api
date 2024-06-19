@@ -1,0 +1,24 @@
+CS493 Final Project
+This project is a RESTful API for a boat and load management system. It is written in Node.js and uses the Express.js framework. The API allows users to create, read, update, and delete boats and loads. It also allows users to assign loads to boats.
+
+The project uses Google Cloud Datastore for data persistence and Auth0 for user authentication and authorization. The API endpoints are protected with JWT (JSON Web Token) based authentication.
+
+The project includes a set of Postman tests located in the postman-tests directory. These tests cover various scenarios and edge cases for the API.
+
+The project's main entry point is server.js. The business logic for boats and loads is located in boats.js and loads.js respectively. The auth.js file contains the configuration for Auth0.
+
+Please note that the auth.js file is not included in the repository due to sensitive information (client ID and secret). You will need to create your own auth.js file with your Auth0 configuration.
+
+To run the project, use the following command:
+
+This project was created by Patrick Godfrey as a final project for CS493.
+
+Detailed API information can be found in API Spec.rtf
+
+Dependencies
+@google-cloud/datastore
+body-parser
+express
+express-jwt
+express-openid-connect
+jwks-rsa
